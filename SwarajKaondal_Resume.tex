@@ -1,111 +1,103 @@
-\documentclass{article}
-\usepackage{graphicx}
-\usepackage[left=2cm, right=2cm, top=2cm]{geometry}
-\usepackage{wrapfig}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Medium Length Professional CV
+% LaTeX Template
+% Version 2.0 (8/5/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Rishi Shah 
+%
+% Important note:
+% This template requires the resume.cls file to be in the same directory as the
+% .tex file. The resume.cls file provides the resume style used for structuring the
+% document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+
+\documentclass{resume} % Use the custom resume.cls style
+
+\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
+\newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
+\newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
+\name{Swaraj Kaondal} % Your name
+\address{F-006 Hrushikesh, Swami Samarth Nagar, Lokhandwala,Andheri-W, Mumbai 400053.} % Your address
+%\address{123 Pleasant Lane \\ City, State 12345} % Your secondary addess (optional)
+\address{(+91)9920368721 \\ swarajkaon@gmail.com} % Your phone number and email
 
 \begin{document}
-\centerline{\Large{\textbf{Swaraj Kaondal}}}
-\noindent\rule{\textwidth}{1pt}\\
-F-006, Hrushikesh,\hfill
-Contact:\hspace{0.8cm} +91-99201368721     \\
-Swami Samarth Nagar,\hfill
-e-mailid:swarajkaon@gmail.com\\
-Lokhandwala,\\
-Andheri-West,\\
-Mumbai-400053.
-\begin{figure}[h]
-\hfill
-\includegraphics[scale = 0.08]{Swaraj.jpg}
-\end{figure}
-\section*{\textbf{CAREER OBJECTIVE}}
-\noindent To have expert knowledge in Embedded Systems and be able to work in one of the top companies dealing with Embedded Systems.
 
-\section*{\textbf{EDUCATION}}
-\begin{tabular}{|c|c|c|c|c|}
-\hline
-Degree & College/School & University & Passing year & Pass percentage/CGPA\\
-\hline
-SSC & Gyan Kendra High School & Maharashtra State Board & 2015 & 93.2\%\\
-\hline
-HSC & Hansraj Morarji College of Science & Maharashtra State Board & 2017 & 86.15\%\\
-\hline
-B.Tech & Sardar Patel Institute& Autonomous affliated  & - &Sem\_1 - 8.96\\
- & of Technology & to Mumbai University & & Sem\_2 - 8.74\\
-&&&&Sem\_3 - 9.58\\
-\hline 
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Education}
+
+{\bf Sardar Patel Institute of Technology, Mumbai} \hfill {\em August 2017 - Present} 
+\\ Bachelor in Technology.\hfill {\em CGPI: 9.26}
+\\ Electronics and Telecommunication.\\
+\\{\bf Hansraj Morarji College of Science and Commerce, Mumbai} \hfill {\em July 2015 - June 2017} 
+\\ HSC\hfill { Percentage: 86.15\% }
+\\
+\\{\bf Gyan Kendra Secondary School, Mumbai} \hfill {\em Passing year: June 2015} 
+\\ SSC\hfill { Percentage: 93.2\% }
+%Minor in Linguistics \smallskip \\
+%Member of Eta Kappa Nu \\
+%Member of Upsilon Pi Epsilon \\
+
+
+\end{rSection}
+
+\begin{rSection}{Carrier Objective}
+ To work for an organization which provides me the opportunity to improve my skills and knowledge to grow along with the organization objective.
+\end{rSection}
+%--------------------------------------------------------------------------------
+%    Projects And Seminars
+%-----------------------------------------------------------------------------------------------
+\begin{rSection}{Projects}
+{\bf Eyantra Robotics competition}
+\\The aim of this project was to build a bot that could pick up and place objects finding its own path efficiently and the whole representation of the process was shown on the screen using augmented reality.\\https://github.com/SwarajKaondal/Eyrc2018-19.git\\
+\\{\bf Pulse Rate Sensor}\\
+This project was used to measure the pulse rate from the tip of a finger using an IR sensor and the pulse wave and rate was displyed on a lCD.\\
+
+\end{rSection}
+%----------------------------------------------------------------------------------------
+%	TECHNICAL STRENGTHS SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Technical strengths}
+\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+Software \& Tools \ & AutoCad, Blender, Qt \\
+Languages & Embedded C (Time triggered systems, Co-operative and hybrid schedulers)\\ & C++\\ & Python(OpenCv, OpenGL) \\ & IoT using MQTT protocol \\
 \end{tabular}
+\end{rSection}
 
+\begin{rSection}{Training and internship}
+{\bf Received training in embedded systems by SafeTTy systems.}
+\\This training focused on developing a fail safe code for embedded systems and the implementation of schedulers.\\
+\\{\bf Two months of internship in L\&T Defence}
+\\Developed a GUI to interface with a radar in Qt using RS-232 protocol.
+\end{rSection}
 
-\section*{\textbf{PROJECTS}}
-\begin{itemize}
-\item Line following bot using Arduino.
-\item Pulse rate sensor using Arduino.
-\end{itemize}
-
-\section*{\textbf{TRAINING AND INTERNSHIP}}
-\begin{itemize}
-\item Recieved training in embeded systems by SafeTTy systems.
-\end{itemize}
-
-\section*{\textbf{TECHNICAL SKILLS}}
-\begin{itemize}
-\item C.
-\item Python (OpenCv, OpenGL).
-\item Embedded C (Time triggered systems, Co-operative and hybrid schedulers).
-\item IoT using MQTT protocol.
-\item Autocad.
-\item Blender.
-\end{itemize}
-
-
-\section*{\textbf{SOFT SKILLS}}
-\begin{itemize}
-\item Good communication.
-\item Adaptability.
-\item Teamwork.
-\end{itemize}
-
-
-\section*{\textbf{EXTRA-CURRICULAR ACTIVITIES}}
-\begin{itemize}
-\item Attended weekly Yoga clases conducted by Sardar Patel Institute of Technology. 
+%----------------------------------------------------------------------------------------
+% Extra Curricular
+%----------------------------------------------------------------------------------------
+\newpage
+\begin{rSection}{Extra-Cirrucular} \itemsep -3pt
+\item Attended weekly Yoga clases conducted by Sardar Patel Institute of Technology.
 \item Active participation in Beach clean conducted by Afroz shah.
 \item Organised an event named "Chain Reaction" for cultural fest "Ruminate '17" of Sardar Patel Institute of Technology.
-\end{itemize}
+\end{rSection}
 
-
-\section*{\textbf{CO-CURRICULAR ACTIVITIES}}
-\begin{itemize}
-\item Attended workshop on Line following bot.
-\item Attended workshop on Arduino.
-\item Attended workshop on AVR microcontroller.
-\end{itemize}
-
-\section*{\textbf{COMPETITIONS AND CERTIFICATES}}
-\begin{itemize}
-\item Finalist in Eyantra robotics national competition hosted by IIT Bombay.\\https://github.com/SwarajKaondal/Eyrc2018-19.git
-\end{itemize}
-
-
-\section*{\textbf{Personal details}}
-Father's name: Sarvjit Singh Kaondal\\
-Mother's name: Saroj Kaondal\\
-Nationality: Indian\\
-Marital Status: Unmarried
-
-
-\section*{\normalsize{\textbf{Reference:}}}
-\noindent 
-Prof. Dayanand Ambawade, Sardar Patel Institute of Technology \\e-mailid: dd\_ambawade@spit.ac.in
-
-
-\section*{\textbf{\normalsize{Declaration:}}}
-\noindent
- I hereby declare that the information furnished above is true to the best of my knowledge.
-
-
-\section*{\textbf{\normalsize{Date:}}}
-\noindent
- 17-04-2019 
-\end{document}
+\begin{rSection}{Personal Traits}
+\item Highly motivated and eager to learn new things.
+\item Adaptable and co-operative with others.
+\item Ability to work as an individual as well as in group.
+\end{rSection}
 \end{document}
